@@ -45,10 +45,10 @@ Example inference code:
 from ultralytics import YOLO
 
 # Load trained model
-model = YOLO("best.pt")
+model = YOLO("Vityarthi-Project/best.pt")
 
 # Predict on an image
-results = model("test_images/test1.jpg")
+results = model("Vityarthi-Projec/test_images/test1.jpg")
 
 # Display result
 results[0].show()
@@ -73,8 +73,8 @@ https://github.com/user-attachments/assets/35e2736a-0361-4c90-a5da-b2ec3f13ae20
 
 Clone the repo:
 
-!git clone https://github.com/Varun-XD-MSI/Sample.git 
-cd Sample
+!git clone https://github.com/Varun-XD-MSI/Vityarthi-Project.git
+cd Vityarthi-Project
 
 
 Run inference:
