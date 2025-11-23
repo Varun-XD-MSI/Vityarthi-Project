@@ -5,11 +5,17 @@ This repository contains the trained model, inference notebook, and sample test 
 
 
 Project Structure
+<br><br/>
 ├── best.pt                 # Trained YOLOv12 model
+<br><br/>
 ├── Brain_tumor.ipynb       # Training notebook
+<br><br/>
 ├── Test.ipynb              # Inference notebook (runs predictions)
+<br><br/>
 ├── test_images/            # Sample test images
+<br><br/>
 ├── README.md               # Project documentation
+<br><br/>
 
 
 
@@ -48,6 +54,17 @@ results = model("test_images/test1.jpg")
 results[0].show()
 
 
+<img width="753" height="755" alt="image" src="https://github.com/user-attachments/assets/f5b518c3-983d-4452-b2da-3a3e36463eaf" />
+
+
+
+
+
+https://github.com/user-attachments/assets/35e2736a-0361-4c90-a5da-b2ec3f13ae20
+
+
+
+
 
 
 
@@ -72,10 +89,14 @@ python inference.py --image test_images/sample.jpg --model best.pt
 A folder test_images/ is included so anyone can run the model immediately.
 
 You can add your own MRI scans here:
+<br><br/>
 
 test_images/
+<br><br/>
 ├── test1.jpg
+<br><br/>
 ├── test2.jpg
+<br><br/>
 
 
 
@@ -83,7 +104,9 @@ test_images/
 🧩 What This Model Does
 
 ✔ Detects presence of a tumor
+<br><br/>
 ✔ Localizes the tumor region with bounding boxes
+<br><br/>
 ✔ Trained on MRI brain scans
 
 🙌 Credits
