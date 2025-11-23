@@ -73,8 +73,8 @@ https://github.com/user-attachments/assets/35e2736a-0361-4c90-a5da-b2ec3f13ae20
 
 Clone the repo:
 
-git clone https://github.com/Varun-XD-MSI/Tumor-detection-vityarthi.git
-cd Tumor-detection-vityarthi
+!git clone https://github.com/Varun-XD-MSI/Sample.git 
+cd Sample
 
 
 Run inference:
