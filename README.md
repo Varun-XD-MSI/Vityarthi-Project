@@ -34,6 +34,11 @@ Install YOLOv12 using:
 pip install ultralytics
 
 
+💻Clone the given repo
+<br><br/>
+!git clone https://github.com/Varun-XD-MSI/Vityarthi-Project.git
+
+
 
 
 🚀 Running Inference (Predict Tumor)
