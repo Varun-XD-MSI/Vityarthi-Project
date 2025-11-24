@@ -48,7 +48,7 @@ from ultralytics import YOLO
 model = YOLO("Vityarthi-Project/best.pt")
 
 # Predict on an image
-results = model("Vityarthi-Projec/test_images/test1.jpg")
+results = model("Vityarthi-Project/test_images/test1.jpg")
 
 # Display result
 results[0].show()
