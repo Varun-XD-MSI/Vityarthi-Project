@@ -4,9 +4,11 @@ Brain tumors are life-threatening and require early and accurate detection for e
 Analyzing MRI scans manually is:
 
 ⚠️ Time-consuming
+<br><br/>
 ⚠️ Requires expert radiologists
+<br><br/>
 ⚠️ Prone to human error
-
+<br><br/>
 This project solves that by developing an AI-powered tumor detection system using YOLOv12, enabling fast, reliable detection of tumor regions from MRI images.
 The goal is to build a simple, accessible, and high-accuracy tool for educational and research use.
 
@@ -16,13 +18,20 @@ The goal is to build a simple, accessible, and high-accuracy tool for educationa
 This project covers:
 
 🎯 Training YOLOv12 on MRI brain scan datasets
+<br><br/>
 🎯 Detecting tumor regions using bounding boxes
+<br><br/>
 🎯 Providing a ready-to-use weight file (best.pt)
+<br><br/>
 🎯 A clean inference notebook for easy testing
+<br><br/>
 🎯 Sample images for quick demo
-🎯 Modular code that can be extended to
+<br><br/>
+🎯 Modular code that can be extended to Multi-class tumor detection
 
-Multi-class tumor detection
+
+
+<br><br/>
 
 Segmentation models
 
@@ -43,10 +52,15 @@ Pixel-wise segmentation masks
 This project is ideal for:
 
 👨‍🎓 Students learning AI / ML / deep learning
+<br><br/>
 🧑‍🔬 Researchers in medical imaging
+<br><br/>
 💻 Developers exploring YOLO workflows
+<br><br/>
 📚 Educators needing teaching material
+<br><br/>
 🧪 Anyone who wants to test MRI detection systems
+<br><br/>
 
 ⚠️ Note: This project is for educational and research purposes only.
 
