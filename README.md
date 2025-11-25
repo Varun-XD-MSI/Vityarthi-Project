@@ -1,121 +1,104 @@
-🧠 Brain Tumor Detection using YOLOv12
+# 🧠 Brain Tumor Detection using YOLOv12
 
-A deep-learning model trained to detect brain tumors using the latest YOLOv12 architecture.
-This repository contains the trained model, inference notebook, and sample test images for quick evaluation.
+---
 
+## 📌 Project Title
+**Brain Tumor Detection using YOLOv12 (Deep Learning – Object Detection)**
 
-Project Structure
-<br><br/>
-├── best.pt                 # Trained YOLOv12 model
-<br><br/>
-├── Brain_tumor.ipynb       # Training notebook
-<br><br/>
-├── Test.ipynb              # Inference notebook (runs predictions)
-<br><br/>
-├── test_images/            # Sample test images
-<br><br/>
-├── README.md               # Project documentation
-<br><br/>
+---
 
+## 📘 Overview of the Project
+This project uses **YOLOv12**, a state-of-the-art object detection model, to automatically detect brain tumors from MRI images.  
+The aim is to create a fast, accurate, and easy-to-use AI system that helps in medical image analysis by identifying tumor regions in MRI scans.
 
+The repository includes:
+- A trained YOLOv12 model (`best.pt`)
+- A test script (`test.py`)
+- Training source code (`Source.py`)
+- Sample MRI images
+- Project documentation (`Statement.md`)
 
-⚙️ Requirements
+---
 
-This project runs on Google Colab or locally with:
+## ⭐ Features
+- Detects **tumor / no tumor** from MRI scans  
+- Powered by **YOLOv12** for high detection accuracy  
+- Pretrained `best.pt` model included  
+- Simple inference using `test.py`  
+- Contains sample images for quick testing  
+- Works on **local system** and **Google Colab**
 
-Python 3.10+
+---
 
-PyTorch (CUDA recommended)
+## 🧰 Technologies / Tools Used
+- **Python 3**
+- **Ultralytics YOLOv12**
+- **PyTorch**
+- **OpenCV**
+- **NumPy**
+- **Google Colab**
+- **GitHub**
 
-Ultralytics YOLOv12
+---
 
-Install YOLOv12 using:
+## 🛠️ Steps to Install & Run the Project
 
-pip install ultralytics
-
-
-💻Clone the given repo
-<br><br/>
-!git clone https://github.com/Varun-XD-MSI/Vityarthi-Project.git
-
-
-
-
-🚀 Running Inference (Predict Tumor)
-
-You can run predictions in Test.ipynb.
-
-Example inference code:
-
+### **1. Clone the repository using terminal**
+```bash
+git clone https://github.com/Varun-XD-MSI/Vityarthi-Project     
+cd Vityarthi-Project                                             
+```
+### **2. Install required dependencies**
+```bash
+pip install ultralytics opencv-python pillow numpy
+```
+### **3. Add and run this in your dedicated python file**
+```bash
 from ultralytics import YOLO
 
-# Load trained model
+# Load the trained model (.pt file)
 model = YOLO("Vityarthi-Project/best.pt")
 
-# Predict on an image
-results = model("Vityarthi-Project/test_images/test1.jpg")
+# Run inference on a test image
+results = model("Vityarthi-Project/test_images/00066_278.jpg")  #Use correct path here!!!
 
-# Display result
+# Display the detection results
 results[0].show()
+```
+### 4. Output
 
 
-<img width="753" height="755" alt="image" src="https://github.com/user-attachments/assets/f5b518c3-983d-4452-b2da-3a3e36463eaf" />
+**The script will:**
 
+-**Load best.pt**
 
+**-Run YOLOv12 inference**
 
+**-Display an MRI image with a bounding box and confidence score**
 
-
-https://github.com/user-attachments/assets/35e2736a-0361-4c90-a5da-b2ec3f13ae20
-
-
-
-
-
-
-
-
-📦 Running Locally
-
-Clone the repo:
-
-!git clone https://github.com/Varun-XD-MSI/Vityarthi-Project.git
-cd Vityarthi-Project
-
-
-Run inference:
-
-python inference.py --image test_images/sample.jpg --model best.pt
+---
 
 
 
 
-📁 Test Images
+**🖼️ Screenshots**
 
-A folder test_images/ is included so anyone can run the model immediately.
-
-You can add your own MRI scans here:
+<img width="1342" height="798" alt="image" src="https://github.com/user-attachments/assets/460d51a0-b242-4128-86fc-3919b7c2021c" />
 <br><br/>
 
-test_images/
-<br><br/>
-├── test1.jpg
-<br><br/>
-├── test2.jpg
+<img width="1071" height="65" alt="image" src="https://github.com/user-attachments/assets/0b0a3561-9b08-429c-82e2-69edcadf996d" />
 <br><br/>
 
+---
 
 
 
-🧩 What This Model Does
 
-✔ Detects presence of a tumor
+
+
+<img width="1468" height="873" alt="image" src="https://github.com/user-attachments/assets/09c22aba-7cab-43bc-a6c7-ac435723a918" />
 <br><br/>
-✔ Localizes the tumor region with bounding boxes
-<br><br/>
-✔ Trained on MRI brain scans
+<img width="1086" height="69" alt="image" src="https://github.com/user-attachments/assets/844c029c-9816-430d-a296-f4dea342e5d8" />
 
-🙌 Credits
 
-YOLOv12 by Ultralytics
 
-Dataset: Brain MRI Tumor Dataset 
