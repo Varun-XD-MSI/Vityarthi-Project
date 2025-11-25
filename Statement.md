@@ -1,89 +1,82 @@
-1️⃣ Problem Statement
+# 1️⃣ Problem Statement
 
-Brain tumors are life-threatening and require early and accurate detection for effective treatment.
-Analyzing MRI scans manually is:
+Brain tumors are serious medical conditions that demand early and accurate detection. However, manually analyzing MRI scans is:
 
-⚠️ Time-consuming
-<br><br/>
-⚠️ Requires expert radiologists
-<br><br/>
-⚠️ Prone to human error
-<br><br/>
-This project solves that by developing an AI-powered tumor detection system using YOLOv12, enabling fast, reliable detection of tumor regions from MRI images.
-The goal is to build a simple, accessible, and high-accuracy tool for educational and research use.
+- ⚠️ **Slow and time-consuming**
+- ⚠️ **Requires specialized radiologists**
+- ⚠️ **Prone to human fatigue and diagnostic errors**
 
+To address these challenges, this project develops an **AI-powered tumor detection system** using **YOLOv12**, a modern deep-learning object detection model.  
+The system automatically identifies and highlights tumor regions from MRI scans, offering:
 
-2️⃣ Scope of the Project
+- **Faster** detection  
+- **More consistent** results  
+- **Easy accessibility** for learning and research  
 
-This project covers:
+This project aims to provide a **simple, reliable, and easy-to-run AI tool** for educational and experimental use — **not for medical diagnosis**.
 
-🎯 Training YOLOv12 on MRI brain scan datasets
-<br><br/>
-🎯 Detecting tumor regions using bounding boxes
-<br><br/>
-🎯 Providing a ready-to-use weight file (best.pt)
-<br><br/>
-🎯 A clean inference notebook for easy testing
-<br><br/>
-🎯 Sample images for quick demo
-<br><br/>
-🎯 Modular code that can be extended to Multi-class tumor detection
+---
 
+# 2️⃣ Scope of the Project
 
+## ✔️ Included in Scope
+This project focuses on:
 
-<br><br/>
+- 🎯 Training **YOLOv12** on MRI brain scan datasets  
+- 🎯 Detecting tumor regions using bounding boxes  
+- 🎯 Providing a ready-to-use trained weight file (`best.pt`)  
+- 🎯 A clean and simple inference script (`test.py`)  
+- 🎯 Sample test images for quick demonstrations  
+- 🎯 A scalable training script (`Source.py`) — easy to tune or extend  
 
-Segmentation models
+## 📌 Possible Extensions
+These features can be added in future versions:
 
-Real-time detection
+- 🔍 Multi-class tumor detection (e.g., Meningioma, Glioma, Pituitary)  
+- 🎨 Segmentation models (pixel-level tumor masks)  
+- ⚡ Real-time MRI analysis  
+- 🌐 Deployment as a web or mobile application  
 
-Web or mobile deployment
+## ❌ Out of Scope (for now)
+- Medical-grade accuracy and clinical approval  
+- 3D volumetric MRI analysis  
+- Pixel-wise segmentation masks (U-Net style)  
 
-🚫 Out of scope (for now):
+---
 
-Medical-grade diagnosis
+# 3️⃣ Target Users
 
-3D volumetric MRI scans
+This project is designed for:
 
-Pixel-wise segmentation masks
+- 👨‍🎓 **Students** learning AI, ML, and medical imaging  
+- 🧑‍🔬 **Researchers** exploring MRI-based tumor detection  
+- 💻 **Developers** working with YOLO models  
+- 📚 **Educators** needing practical demonstration material  
+- 🧪 **Anyone** curious about brain tumor detection using AI  
 
-3️⃣ Target Users
+⚠️ **Important:**  
+This system is for **educational and research purposes only** and is not meant for clinical decision-making.
 
-This project is ideal for:
+---
 
-👨‍🎓 Students learning AI / ML / deep learning
-<br><br/>
-🧑‍🔬 Researchers in medical imaging
-<br><br/>
-💻 Developers exploring YOLO workflows
-<br><br/>
-📚 Educators needing teaching material
-<br><br/>
-🧪 Anyone who wants to test MRI detection systems
-<br><br/>
+# 4️⃣ High-Level Features
 
-⚠️ Note: This project is for educational and research purposes only.
+### ✨ YOLOv12-Based Tumor Detection
+Fast and accurate bounding-box prediction for tumor regions.
 
+### 📦 Pre-Trained Model Included
+`best.pt` allows instant testing without retraining.
 
-4️⃣ High-Level Features
+### 📓 Easy-to-Run Inference Script
+`test.py` works with a single command on any system or Google Colab.
 
-✨ YOLOv12-Based Detection
-Fast and highly accurate tumor bounding-box predictions.
+### 🖼 Sample Test Images
+Located in `test_images/` for easy demonstration.
 
-📦 Pre-trained Model (best.pt) Included
-Start testing immediately — no training required.
+### 🛠 Clean & Modular Codebase
+Organized training and inference pipeline, easy to extend.
 
-📓 Easy-to-Run Inference Notebook (Test.ipynb)
-Upload an MRI image → get detection results in seconds.
-
-🖼 Sample Test Images Provided
-Located in test_images/, ready for demo.
-
-🛠 Modular & Extensible Code
-Clean codebase ready for further development.
-
-🌩 Colab-Friendly Workflow
-No environment headaches — everything works directly in Google Colab.
-
+### 🌩 Colab-Friendly Workflow
+Runs smoothly on Google Colab GPU without dependency issues.
 
 
